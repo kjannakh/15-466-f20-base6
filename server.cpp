@@ -116,11 +116,6 @@ int main(int argc, char **argv) {
 					//got data from client:
 					//std::cout << "got bytes:\n" << hex_dump(c->recv_buffer); std::cout.flush();
 
-					//look up in players list:
-					auto f = players.find(c);
-					assert(f != players.end());
-					PlayerInfo &player = f->second;
-
 					//handle messages from client:
 					//TODO: update for the sorts of messages your clients send
 					while (c->recv_buffer.size() >= 68) {
