@@ -69,5 +69,5 @@ This game also supports more players connecting as spectators, but if one of the
 
 Sources: I created all the assets myself using GIMP. In server.cpp, I used some code from https://en.cppreference.com/w/cpp/algorithm/random_shuffle to randomize the squares for the speed challenge.
 
-This game was built with [NEST](NEST.md).
+This game was built with [NEST](NEST.md)..
 
