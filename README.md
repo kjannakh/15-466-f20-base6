@@ -69,5 +69,7 @@ This game also supports more players connecting as spectators, but if one of the
 
 Sources: I created all the assets myself using GIMP. In server.cpp, I used some code from https://en.cppreference.com/w/cpp/algorithm/random_shuffle to randomize the squares for the speed challenge.
 
+Note: When the size of the chess board is calculated, it assumes that your window is wider than it is long. If you try to make it very narrow it will clip off screen.
+
 This game was built with [NEST](NEST.md)..
 

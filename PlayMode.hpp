@@ -43,8 +43,8 @@ struct PlayMode : Mode {
 	struct checkerboard_tile from_tile;
 	struct checkerboard_tile orig_tile;
 
-	int prev_draw_x = -1;
-	int prev_draw_y = -1;
+	unsigned int prev_draw_x = 0;
+	unsigned int prev_draw_y = 0;
 
 	struct Selection {
 		int i;

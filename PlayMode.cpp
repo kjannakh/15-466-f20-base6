@@ -641,7 +641,7 @@ void PlayMode::make_move() {
 		}
 	}
 	i = 0;
-	tile_state piece;
+	tile_state piece = EMPTY;
 	pieces_taken = 0;
 	for (auto selected_tile : selected_tiles) {
 		struct checkerboard_tile tile;
@@ -696,7 +696,6 @@ void PlayMode::draw(glm::uvec2 const &drawable_size) {
 	{
 		glDisable(GL_BLEND);
 		glBlendFunc(GL_ONE, GL_ZERO);
-		float aspect = float(drawable_size.x) / float(drawable_size.y);
 		DrawLines lines(projection);
 
 		auto draw_text = [&](glm::vec2 const& at, std::string const& text, float H) {
@@ -871,7 +870,6 @@ void PlayMode::draw(glm::uvec2 const &drawable_size) {
 	if (game_mode == 2) {
 		glDisable(GL_BLEND);
 		glBlendFunc(GL_ONE, GL_ZERO);
-		float aspect = float(drawable_size.x) / float(drawable_size.y);
 		DrawLines lines(projection);
 
 		auto draw_text = [&](glm::vec2 const& at, std::string const& text, float H) {
